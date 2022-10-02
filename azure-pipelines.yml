@@ -43,7 +43,7 @@ steps:
 - task: MSCRMExportSolution@12
   inputs:
     crmConnectionString: '$(SourceCRMCnn)'
-    solutionName: '$(Solutionname)'
+    solutionName: '$(SolutionName)'
     exportManaged: true
     exportUnmanaged: true
     targetVersion: '$(Build.BuildNumber)'
