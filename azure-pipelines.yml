@@ -48,7 +48,11 @@ steps:
     exportUnmanaged: false
     outputPath: '$(build.binariesdirectory)'
 
-
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'
 
 - task: NuGetToolInstaller@1
 
