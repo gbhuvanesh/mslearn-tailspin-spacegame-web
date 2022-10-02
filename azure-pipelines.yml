@@ -37,8 +37,9 @@ steps:
   inputs:
     nugetFeed: 'official'
     psFeed: 'official'
-    
+
 - task: MSCRMPing@12
   inputs:
+    crmConnectionString: 'AuthType=OAuth;Username=bhuvaneshg@kamalacon.onmicrosoft.com;Password=passcode;Url=https://kcljune.crm11.dynamics.com/;'
+  inputs:
     crmConnectionString: 'https://kcljune.crm11.dynamics.com/'
-    
