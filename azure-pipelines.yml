@@ -46,7 +46,7 @@ steps:
     solutionName: '$(SolutionName)'
     exportManaged: true
     exportUnmanaged: false
-    outputPath: '$(build.binariesdirectory)'
+    outputPath: '$(Build.ArtifactStagingDirectory).'
 
 - task: PublishBuildArtifacts@1
   inputs:
