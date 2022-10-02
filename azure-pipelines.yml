@@ -40,4 +40,4 @@ steps:
 
 - task: MSCRMPing@12
   inputs:
-    crmConnectionString: 'AuthType=OAuth;Username=bhuvanesh@kamalacon.onmicrosoft.com;Password=Original@Onec;Url=https://kcljune.crm11.dynamics.com/;AppId=; client=GHk8Q~DPMZkWdPWcuqoQbibX5lSk6nVRfmXw~ayh;redirecturl=http://localhost'
+    crmConnectionString: 'AuthType=OAuth;Username=bhuvanesh@kamalacon.onmicrosoft.com;Password=Original@Onec;Url=https://kcljune.crm11.dynamics.com/;AppId=f3c800d9-bcd5-42dd-9a17-ae545c376de4;client=GHk8Q~DPMZkWdPWcuqoQbibX5lSk6nVRfmXw~ayh;redirecturl=http://localhost'
