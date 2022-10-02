@@ -45,7 +45,7 @@ steps:
     crmConnectionString: '$(SourceCRMConn)'
     solutionName: '$(SolutionName)'
     exportManaged: true
-    exportUnmanaged: true
+    exportUnmanaged: false
     targetVersion: '$(Build.BuildNumber)'
     includeVersionInSolutionFile: true
     outputPath: '$(build.binariesdirectory)'
