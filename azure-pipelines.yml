@@ -40,6 +40,4 @@ steps:
 
 - task: MSCRMPing@12
   inputs:
-    crmConnectionString: 'AuthType=OAuth;Username=bhuvaneshg@kamalacon.onmicrosoft.com;Password=passcode;Url=https://kcljune.crm11.dynamics.com/;'
-  inputs:
-    crmConnectionString: 'https://kcljune.crm11.dynamics.com/'
+    crmConnectionString: 'AuthType=OAuth;Username=bhuvaneshg@kamalacon.onmicrosoft.com;Password=Original@One2;Url=https://kcljune.crm11.dynamics.com/;'
