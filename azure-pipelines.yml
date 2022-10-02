@@ -41,3 +41,4 @@ steps:
 - task: MSCRMPing@12
   inputs:
     crmConnectionString: 'https://kcljune.crm11.dynamics.com/'
+    
