@@ -38,3 +38,6 @@ steps:
     nugetFeed: 'official'
     psFeed: 'official'
     
+- task: MSCRMPing@12
+  inputs:
+    crmConnectionString: 'https://kcljune.crm11.dynamics.com/'
