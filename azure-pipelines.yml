@@ -14,6 +14,7 @@ variables:
   buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
   SourceCRMConn:  'AuthType=ClientSecret;url=https://kcljune.crm11.dynamics.com/;ClientId=f3c800d9-bcd5-42dd-9a17-ae545c376de4;ClientSecret=GHk8Q~DPMZkWdPWcuqoQbibX5lSk6nVRfmXw~ayh;'
+  SolutionName: 'MBFlowImportTest'
 
 steps:
 - task: MSCRMToolInstaller@12
@@ -35,9 +36,19 @@ steps:
   inputs:
     target: 'crm'
     crmConnectionString: $(SourceCRMConn)
-    solutionName: 'MBFlowImportTest'
+    solutionName: $(SolutionName)
     versionNumber: '1.0.0.0'
 
+
+- task: MSCRMExportSolution@12
+  inputs:
+    crmConnectionString: '$(SourceCRMCnn)'
+    solutionName: '$(Solutionname)'
+    exportManaged: true
+    exportUnmanaged: true
+    targetVersion: '1.0.0.0'
+    includeVersionInSolutionFile: true
+    outputPath: '$(build.binariesdirectory)'
 
 
 
