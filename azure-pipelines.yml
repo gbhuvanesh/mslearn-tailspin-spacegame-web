@@ -15,6 +15,15 @@ variables:
   buildConfiguration: 'Release'
 
 steps:
+- task: MSCRMToolInstaller@12
+  inputs:
+    nugetFeed: 'official'
+    psFeed: 'official'
+
+- task: MSCRMPing@12
+  inputs:
+    crmConnectionString: 'AuthType=ClientSecret;url=https://kcljune.crm11.dynamics.com/;ClientId=f3c800d9-bcd5-42dd-9a17-ae545c376de4;ClientSecret=GHk8Q~DPMZkWdPWcuqoQbibX5lSk6nVRfmXw~ayh;'
+
 - task: NuGetToolInstaller@1
 
 - task: NuGetCommand@2
@@ -33,11 +42,3 @@ steps:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
 
-- task: MSCRMToolInstaller@12
-  inputs:
-    nugetFeed: 'official'
-    psFeed: 'official'
-
-- task: MSCRMPing@12
-  inputs:
-    crmConnectionString: 'AuthType=ClientSecret;url=https://kcljune.crm11.dynamics.com/;ClientId=f3c800d9-bcd5-42dd-9a17-ae545c376de4;ClientSecret=GHk8Q~DPMZkWdPWcuqoQbibX5lSk6nVRfmXw~ayh;'
