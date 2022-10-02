@@ -23,18 +23,18 @@ steps:
 
 - task: MSCRMPing@12
   inputs:
-    crmConnectionString: ${SourceCRMConn}
+    crmConnectionString: $(SourceCRMConn)
 
 
 - task: MSCRMPublishCustomizations@12
   inputs:
-    crmConnectionString: 'AuthType=ClientSecret;url=https://kcljune.crm11.dynamics.com/;ClientId=f3c800d9-bcd5-42dd-9a17-ae545c376de4;ClientSecret=GHk8Q~DPMZkWdPWcuqoQbibX5lSk6nVRfmXw~ayh;'
+    crmConnectionString: $(SourceCRMConn)
 
 
 - task: MSCRMSetVersion@12
   inputs:
     target: 'crm'
-    crmConnectionString: 'AuthType=ClientSecret;url=https://kcljune.crm11.dynamics.com/;ClientId=f3c800d9-bcd5-42dd-9a17-ae545c376de4;ClientSecret=GHk8Q~DPMZkWdPWcuqoQbibX5lSk6nVRfmXw~ayh;'
+    crmConnectionString: $(SourceCRMConn)
     solutionName: 'MBFlowImportTest'
     versionNumber: '1.0.0.0'
 
