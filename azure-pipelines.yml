@@ -46,8 +46,6 @@ steps:
     solutionName: '$(SolutionName)'
     exportManaged: true
     exportUnmanaged: false
-    targetVersion: '7.0.0.0'
-    includeVersionInSolutionFile: true
     outputPath: '$(build.binariesdirectory)'
 
 
