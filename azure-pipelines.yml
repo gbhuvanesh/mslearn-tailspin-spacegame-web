@@ -6,6 +6,7 @@
 trigger:
 - main
 
+#test
 pool:
   vmImage: 'windows-latest'
 
