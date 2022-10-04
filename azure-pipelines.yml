@@ -38,7 +38,7 @@ steps:
     target: 'crm'
     crmConnectionString: $(SourceCRMConn)
     solutionName: $(SolutionName)
-    versionNumber: '1.0.0.1'
+    versionNumber: '1.0.0.2'
 
 
 - task: MSCRMExportSolution@12
